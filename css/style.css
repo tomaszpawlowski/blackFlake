@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    padding: 2em;
+    height: 100%;
+}
+.slideShowMaster {
+    width: 100%;
+    height: 80%;
+    background-color: black;
+    position: relative;
+    list-style: none;
+}
+.slideShowMaster .photoName,
+.slideShowMaster .photoAuthor,
+.slideShowMaster .photoCamera,
+.slideShowMaster .photoLocation {
+    display: none;
+}
+
+.slideShowMaster li {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    transition: opacity 0.5s;
+}
+.slideShowMaster img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
